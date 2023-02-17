@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="388.0" prefWidth="962.0" style="-fx-background-color: #52627a;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="com.example.gui.GuiController">
+    <children>
+
+        <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="361.0" prefWidth="333.0" style="-fx-background-color: #243146; -fx-background-radius: 5; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-border-radius: 5; -fx-border-image-width: 5;">
+            <children>
+                <Label layoutX="14.0" layoutY="5.0" text="SourceExpression" textFill="WHITE">
+                    <font>
+                        <Font name="Fira Code Retina" size="13.0" />
+                    </font></Label>
+                <JFXTextArea fx:id="sourceExpression"  focusColor="#65aaeb" layoutX="14.0" layoutY="36.0" prefHeight="50.0" prefWidth="306.0" style="-fx-text-fill: #ffffff;" unFocusColor="WHITE" >
+                    <font>
+                        <Font name="Fira Code Regular" size="15.0" />
+                    </font>
+                </JFXTextArea>
+                <Label layoutX="14.0" layoutY="105.0" text="ResultExpression" textFill="WHITE">
+                    <font>
+                        <Font name="Fira Code Retina" size="13.0" />
+                    </font></Label>
+                <JFXTextArea fx:id="resultExpression" editable="false" focusColor="#65aaeb" layoutX="14.0" layoutY="136.0" prefHeight="100.0" prefWidth="306.0" style="-fx-text-fill: #ffffff;" unFocusColor="WHITE">
+                    <font>
+                        <Font name="Fira Code Regular" size="13.0" />
+                    </font>
+                </JFXTextArea>
+                <Label layoutX="14.0" layoutY="255.0" text="ResultValue" textFill="WHITE">
+                    <font>
+                        <Font name="Fira Code Retina" size="13.0" />
+                    </font></Label>
+                <JFXTextArea fx:id="resultValue"  editable="false" focusColor="#65aaeb" layoutX="14.0" layoutY="286.0" prefHeight="54.0" prefWidth="306.0" style="-fx-text-fill: #ffffff;" unFocusColor="WHITE">
+                    <font>
+                        <Font name="Fira Code Regular" size="15.0" />
+                    </font>
+                </JFXTextArea>
+            </children>
+        </AnchorPane>
+
+        <AnchorPane layoutX="356.0" layoutY="14.0" prefHeight="361.0" prefWidth="333.0" style="-fx-background-color: #243146; -fx-background-radius: 5; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-border-radius: 5; -fx-border-image-width: 5;">
+            <children>
+                <Label layoutX="14.0" layoutY="5.0" text="Phrase Stack" textFill="WHITE">
+                    <font>
+                        <Font name="Fira Code Retina" size="13.0" />
+                    </font></Label>
+                <JFXTextArea fx:id="phraseStack" editable="false" focusColor="#65aaeb" layoutX="14.0" layoutY="36.0" prefHeight="304.0" prefWidth="306.0" style="-fx-text-fill: #ffffff;" unFocusColor="WHITE">
+                    <font>
+                        <Font name="Fira Code Regular" size="13.0" />
+                    </font>
+                </JFXTextArea>
+            </children>
+        </AnchorPane>
+
+        <AnchorPane layoutX="693.0" layoutY="14.0" prefHeight="361.0" prefWidth="250.0" style="-fx-background-color: #243146; -fx-background-radius: 5; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-border-radius: 5; -fx-border-image-width: 5;">
+            <children>
+                <Label layoutX="14.0" layoutY="5.0" text="Grammar Stack" textFill="WHITE">
+                    <font>
+                        <Font name="Fira Code Retina" size="13.0" />
+                    </font>
+                </Label>
+                <JFXTextArea fx:id="grammarStack" editable="false" focusColor="#65aaeb" labelFloat="true" layoutX="14.0" layoutY="36.0" prefHeight="304.0" prefWidth="221.0"  style="-fx-text-fill: #ffffff; -fx-prompt-text-fill: #ffffff;" unFocusColor="WHITE">
+                    <font>
+                        <Font name="Fira Code Retina" size="12.0" />
+                    </font>
+                </JFXTextArea>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
